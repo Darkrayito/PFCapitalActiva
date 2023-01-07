@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body class="form_body">
+        <form class="form" method="post" action="https://www.htmlquick.com/form-result.php">
+            <fieldset class="datos">
+                <h1>CONTACTO</h1>
+                <p>Si tienes sugerencias sobre nuevo contenido o has encontrado algún error en la web no dudes en ponerte en contacto con nosotros enviando el siguiente formulario:</p>
+                <label>Nombre<input type="text" name="Nombre" required></label>
+                <label>Email<input type="email" name="Email" required></label>
+                <label>Motivo<select name="Motivo" required>
+                    <option>Error</option>
+                    <option>Sugerencia</option>
+                </select></label>
+                <label>Comentario <textarea name="Comentario" placeholder="Ingrese aquí su comentario (252 carácteres max) ..." rows="5" cols="126" maxlength="252" required></textarea></label>
+                <input type="submit" id="enviar" value="Enviar">
+            </fieldset>
+        </form>
+</body>
+</html>

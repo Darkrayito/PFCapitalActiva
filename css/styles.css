@@ -1,0 +1,670 @@
+/* Formulario */
+.form_body{
+    background-image: url("https://mcdn.wallpapersafari.com/medium/9/54/zfGYtS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 60vh;
+}
+
+.form{
+    color: #f8f2f2;
+    background-color: #db1212;
+    width: 60vw;
+    min-width: 700px;
+    margin: 5% auto;
+    border-radius: 75px;
+}
+
+.datos{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 3rem 2rem;
+    font-size: 25px;
+    border-radius: 60px;
+    border: 7px solid #fff;
+}
+
+.datos h1, .datos p{
+    text-align: center;
+    margin: 1.1rem auto;
+}
+.datos h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;
+}
+
+.datos label{
+    display: block;
+    margin: 0.8rem 0;
+}
+
+#enviar{
+    display: block;
+    width: 10%;
+    min-width: 78px;
+    margin: 2rem auto 0 auto;
+    background-color: #fff;
+    color: #ff0000;
+    border-radius: 100px;
+    border: 1.5px solid #000 ;
+    font-weight:bolder;
+} 
+#enviar:hover{
+     color:#ff0000;
+     background-color: #000;
+     border: 1.5px solid #fff;
+}
+#enviar:active{
+    color:#f54e4e;
+    background-color: #3d3838;
+    border: 1.5px solid #dad0d0;
+}
+
+.datos input, .datos select, .datos textarea{
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    margin: 5%, 0,0,0;
+    background-color: #000;
+    color:#f3a8a8;
+    border: 1.5px solid #fff;
+    font-size: 15px;
+}
+.datos textarea::placeholder{
+    color: #f3a8a8;
+}
+
+.datos textarea {
+    resize: none;
+}
+
+.datos input, .datos select{
+    height: 2rem;
+}
+
+.datos input:-webkit-autofill,
+.datos input:-webkit-autofill:hover, 
+.datos input:-webkit-autofill:focus, 
+.datos input:-webkit-autofill:active{
+    box-shadow: 0 0 0 30px ;
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 1) inset !important;
+    -webkit-text-fill-color: #f3a8a8 !important;
+}
+
+/*
+////////////////////////////////////////////////////////////
+Main Page
+////////////////////////////////////////////////////////////
+*/
+
+html{
+    scroll-padding-top: 200px;
+    scroll-behavior: smooth;
+}
+
+.main_body{
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    min-width: 680px;
+} 
+
+.main_body a{
+    color: black;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,header{
+    font-family: 'Comfortaa', cursive;
+}
+
+table,p, details{
+    font-family: 'Manrope', sans-serif;
+}
+
+.main_content a{
+    font-weight: bold;
+    color: rgb(214, 3, 3);
+}
+
+
+/* Topside Bar*/
+
+.cabecera{
+    background: linear-gradient(rgb(248, 5, 5, 1), rgb(190, 25, 25), rgb(2, 2, 2,1),#fff, #ffffff);
+    border-bottom: 4px solid #000;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+}
+
+#Pokemon_image{
+    width: 200px;
+    height: 200px;
+}
+
+.logo_nav{
+    width:85%;
+    min-width: 900px;
+    margin:0px auto;
+    padding: 0;
+    text-align: center;
+}
+
+.logo img{
+    width: 340px;
+}
+
+.topbar_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.topbar_list>li{
+    display: inline-block;
+}
+
+.topbar_list li a{
+    color: black;
+    font-weight: bold;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border: 3px solid #000;
+    border-bottom: 0px;
+    display: block;
+    padding: 1rem 1.5rem ;
+    margin:0;
+    transition: all 0.25s linear;
+}
+
+#pball:hover{
+    background: linear-gradient(rgb(252, 45, 45),rgb(126, 27, 27));
+    color:#fff;
+    box-shadow: 5px 0px 10px red, -5px 0px 10px red;
+}
+#sball:hover{
+    background:linear-gradient(to right,rgb(21, 21, 190), rgb(190, 26, 26),rgb(21,21,190),rgb(21,21,190),rgb(190, 26, 26), rgb(21,21,190));
+    color:#fff;
+    box-shadow: 5px 0px 10px blue, -5px 0px 10px blue;
+}
+
+#uball:hover{
+    background:linear-gradient(to right,black, rgb(180,180,21),black,black,rgb(180,180,21), black);
+    color:#fff;
+    box-shadow: 5px 0px 10px black, -5px 0px 10px black;
+}
+
+#mball:hover{
+    background:linear-gradient(to right,rgb(235, 86, 235), darkviolet,darkviolet,darkviolet,darkviolet, rgb(235, 86, 235));
+    color:#fff;
+    box-shadow: 5px 0px 10px darkviolet, -5px 0px 10px darkviolet;
+}
+/* /////////////////////////////////////////////// */
+
+/* Barra Lateral  */
+
+.wrapper{
+    padding-top: 12rem;
+}
+
+.sidebar{
+    background-color: rgb(202, 202, 202);
+    border: 4px solid black;
+    border-left: none;
+    position: fixed;
+    left:0;
+    top: 182px;
+    margin:0;
+    width:220px;
+    min-width:160px;
+    height: 100%;
+    padding-top: 125px;
+}
+
+.sidebar h2{
+    text-align: center;
+    font-size: 35px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+
+.lista_tipos td{
+    background-color: black;
+    border: 2px solid black(127, 206, 233);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 5px;
+}
+
+.lista_tipos td a{
+    color: white;
+    font-size: 20px;
+}
+
+/*  Sumario */
+
+details{
+    border: 2px solid black;
+    display: inline-block;
+}
+
+summary{
+    margin: 0 4px;
+}
+
+.list_sumario{
+    margin: 2px 0;
+    border-top: 2px dotted black;
+}
+
+.list_sumario li{
+    padding: 5px;
+    list-style:none;
+}
+
+/*  Contenido Principal -Aside- */
+
+.poke_ficha{
+    text-align: center;
+    margin: 25px;
+    background-color: grey;
+    float: right ;
+    width: 20%;
+    min-width: 300px;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+.lista_tipos, .dex, .datos_tabla{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 8px;
+}
+
+.poke_ficha h2, .poke_ficha h3 ,.poke_ficha h4{
+    color: rgb(109, 255, 255);
+    margin: 10px;
+}
+
+.poke_ficha h2{
+    font-size: 29px;
+    font-weight: 700;
+    margin: 15px;
+    letter-spacing: 5px;
+}
+
+.poke_ficha h3{
+    font-size: 24px;
+}
+
+.poke_ficha h4{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.dex{
+    width: 250px;
+}
+
+.dex_order, .datos_tabla{
+    background-color: white;
+}
+
+#Pokemon_image{
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.datos_tabla{
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border-collapse: separate;
+    border-style: hidden;
+    border-spacing: 1px;
+}
+
+.datos_tabla td{
+    padding: 0.7rem;
+    border-bottom: 0.8px dotted black;
+}
+.last td{
+    border: none;
+}
+
+/* Contenido Principal -Main-   */
+
+.main_content, footer{
+    padding-left: 250px;
+    min-width: 950px;
+}
+
+.main_content p{
+    line-height: 35px;
+}
+
+.main_content h1{
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+.main_content h2:not(aside h2){
+    margin-right: 30px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid rgb(185, 184, 184);
+    font-size: 26px;
+}
+
+.main_content h3:not(aside h3){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main_content h2 a, .main_content h3 a{
+    color: Black;
+}
+
+
+
+/* Diferencia de género */
+
+.tabla_genero{
+    margin: auto;
+    border: 3px solid rgb(190, 190, 190);
+    padding: 0.8rem;
+    border-radius: 15px;
+}
+
+.tabla_genero td {
+    text-align: center;
+    padding: 10px;
+}
+
+.gender_img {
+    background-color: rgb(168, 241, 217);
+}
+
+.tabla_genero td img{
+    width: 120px;
+    height: 120px;
+}
+
+.evol {
+    border: 2px dotted rgb(190, 190, 190);
+    text-align: center;
+    margin: auto
+}
+
+.evol_img, .evol{
+    width: 180px;
+    height: 180px;
+}
+
+.evol figcaption{
+    font-weight: bold;
+}
+
+/* Descripcion y Localizacion  */
+
+.ediciones{
+    margin: auto;
+    max-width: 965px ;
+    background-color: rgb(168, 241, 217);
+    border-collapse: collapse;
+    outline: 2px solid black;
+    outline-offset: 4px;
+}
+
+.ediciones th, .ediciones td{
+    padding: 0.5rem;
+    outline: 2px solid white;
+}
+
+.Diamante{
+    color: white;
+    background-color: #6077FF ;
+}
+.Diamante_txt{
+    background-color: #afbaf8;
+}
+
+.Perla{
+    color:white;
+    background-color: #FC72E4;
+}
+.Perla_txt{
+    background-color: #f8b6ed;
+}
+
+.Platino{
+    color:white;
+    background-color:#6B6B6B;
+}
+.Platino_txt{
+    background-color:  #c7c7c7;
+}
+
+.OroHG{
+    color:white;
+    background-color:#D19A19;
+}
+.OroHG_txt{
+    background-color:#cab27b;
+}
+
+.PlataSS{
+    color:white;
+    background-color:#a8a8a8;
+}
+.PlataSS_txt{
+    background-color:#dddddd;
+}
+
+.Negro, .Negro2{
+    color:white;
+    background-color:#000;
+}
+.Negro_txt, .Negro2_txt{
+    background-color:#818181;
+}
+
+.Blanco, .Blanco2{
+    color:black;
+    background-color:#ecebeb;
+}
+
+.Blanco_txt, .Blanco2_txt{
+    background-color:#ecebeb;
+}
+
+.PokeX{
+    color:white;
+    background-color:#1f476c;
+}
+.PokeX_txt{
+    background-color:#7493b1;
+}
+
+.PokeY{
+    color:white;
+    background-color:#d22b45;
+}
+.PokeY_txt{
+    background-color:#d48591;
+}
+
+.RubiOmega{
+    color:white;
+    background-color:#e43900;
+}
+.RubiOmega_txt{
+    background-color:#cf876f;
+}
+
+.ZafiroAlfa{
+    color:white;
+    background-color:#008CB3;
+}
+.ZafiroAlfa_txt{
+    background-color:#74a6b4;
+}
+
+/* Tabla Moves y Stats*/
+
+.tabla{
+    margin: auto ;
+    min-width: 800px;
+    text-align: center;
+    outline: 2px solid black;
+    border-collapse: collapse;
+    outline-offset: 2px;
+}
+
+.tabla th{
+    padding: 0.3rem;
+    color:white;
+    background-color: #000;
+    outline: 2px solid #292929;
+}
+
+.tabla td{
+    background-color: #dcfff3;
+    font-weight: bold;
+    padding: 0.3rem;
+    outline: 2px solid #292929;
+}
+
+.row_h{
+    padding: 0.3rem;
+    text-align:left;
+}
+
+.Tipo{
+    width:65px;
+    height:25px;
+}
+
+.GameIcon{
+    width:40px;
+    height: 40px;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 5rem;
+    border-top: 4px solid black;
+    background-color: #dcfff3;
+    color:black;
+}
+
+.container{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.redes td{
+    display:inline;
+}
+
+.redes img{
+    width: 60px;
+    height: 60px;
+}
+.contact_table{
+    text-align: center;
+}
+
+.contact_table img{
+    width: 60px;
+    height: 60px;
+}
+
+/* SideBar Buttons */
+
+.lista_tipos td{
+    transition: all 0.25s linear;
+}
+
+.Acero:hover{
+    background-color: #92a9aa ;
+}
+
+.Agua:hover{
+    background-color: #4592c4 ;
+}
+
+.Bicho:hover{
+    background-color: #729f3f ;
+}
+
+.Dragon:hover{
+    background-color: #682bf8  ;
+}
+
+.Electrico:hover{
+    background-color: #e2c400  ;
+}
+
+.Fantasma:hover{
+    background-color: #665186  ;
+}
+
+.Fuego:hover{
+    background-color: #ff832a  ;
+}
+
+.Hada:hover{
+    background-color: #f890dc  ;
+}
+
+.Hielo:hover{
+    background-color: #73d1d1  ;
+}
+
+.Lucha:hover{
+    background-color: #be4e09  ;
+}
+
+.Normal:hover{
+    background-color: #929267  ;
+}
+
+.Planta:hover{
+    background-color: #8cc932  ;
+}
+
+.Psiquico:hover{
+    background-color: #f545ac  ;
+}
+
+.Roca:hover{
+    background-color: #a38c21  ;
+}
+
+.Siniestro:hover{
+    background-color: #707070  ;
+}
+
+.Tierra:hover{
+    background-color: #d4a82f  ;
+}
+
+.Veneno:hover{
+    background-color: #b97fc9  ;
+}
+
+.Volador:hover{
+    background-color: #3dc7ef  ;
+}
